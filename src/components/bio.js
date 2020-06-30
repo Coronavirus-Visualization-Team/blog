@@ -43,25 +43,8 @@ const Bio = () => {
         marginBottom: rhythm(2.5),
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
+        By the <strong>Coronavirus Visualization Team</strong> a crowdsourced student network of data scientists and analysts, developers, and communicators working to better visualize and share the impacts, present and future, of COVID-19.
       </p>
     </div>
   )
