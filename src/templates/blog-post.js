@@ -17,12 +17,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
+      <article
+          style={{
+            width: `100%`,
+            backgroundColor: `white`
+          }}
+      >
         <header>
           <h1
             style={{
               marginTop: rhythm(1),
+              paddingTop: `2vh`,
               marginBottom: 0,
+              paddingLeft: `2.3vw`,
+              paddingRight: `2.5vw`
             }}
           >
             {post.frontmatter.title}
@@ -32,18 +40,33 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               ...scale(-1 / 5),
               display: `block`,
               marginBottom: rhythm(1),
+              paddingLeft: `2.5vw`,
+              paddingRight: `2.5vw`
             }}
           >
             {post.frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section dangerouslySetInnerHTML={{ __html: post.html }}             
+          style={{
+              paddingLeft: `2.5vw`,
+              paddingRight: `2.5vw`
+            }} 
+        />
         <hr
           style={{
-            marginBottom: rhythm(1),
+            margin: rhythm(1),
           }}
         />
-        <footer>
+        <footer
+          style={{
+            ...scale(-1 / 5),
+            display: `block`,
+            marginBottom: rhythm(1),
+            paddingLeft: `2.5vw`,
+            paddingRight: `2.5vw`
+          }}
+        >
           <Bio />
         </footer>
       </article>
