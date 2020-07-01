@@ -50,6 +50,15 @@ const Layout = ({ location, title, children }) => {
   return (
     <div
       style={{
+        margin: `0`,
+        height: `100vh`,
+        width: `100%`,
+        backgroundColor: `#1affc6`,
+        color: `#5A5A5A`
+      }}
+    >
+    <div
+      style={{
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
@@ -61,8 +70,9 @@ const Layout = ({ location, title, children }) => {
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org" style= {{color: `#5A5A5A` }}>Gatsby</a>
       </footer>
+    </div>
     </div>
   )
 }
