@@ -18,10 +18,21 @@ const BlogIndex = ({ data, location }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
+            <div
+              style={{
+                margin: `0`,
+                paddingLeft: `2vw`,
+                paddingRight: `2vw`,
+                width: `100%`,
+                minWidth: `100%`,
+                backgroundColor: `white`,                
+              }} 
+            >
             <header>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
+                  paddingTop: `4vh`
                 }}
               >
                 <Link style={{ boxShadow: `none`, color: `#5A5A5A` }} to={node.fields.slug}>
@@ -30,14 +41,18 @@ const BlogIndex = ({ data, location }) => {
               </h3>
               <small>{node.frontmatter.date}</small>
             </header>
-            <section>
+            <section
+              style={{
+                paddingBottom: `0.5vh`
+              }} >
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
             </section>
-          </article>
+         </div> 
+      </article>
         )
       })}
     </Layout>
