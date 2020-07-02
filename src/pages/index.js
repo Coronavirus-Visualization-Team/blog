@@ -20,11 +20,10 @@ const BlogIndex = ({ data, location }) => {
           <article key={node.fields.slug}>
             <div
               style={{
-                margin: `0`,
-                paddingLeft: `2vw`,
-                paddingRight: `2vw`,
-                width: `100%`,
-                minWidth: `100%`,
+                margin: `auto`,
+                position: `absolute`,
+                left: `50`,
+                top: `50vh`,
                 backgroundColor: `white`,                
               }} 
             >
@@ -34,7 +33,6 @@ const BlogIndex = ({ data, location }) => {
                   fontFamily: "'Chivo', sans-serif",
                   fontWeight: "bold",
                   marginBottom: rhythm(1 / 4),
-                  paddingTop: `4vh`
                 }}
               >
                 <Link style={{ boxShadow: `none`, color: `#5A5A5A` }} to={node.fields.slug}>

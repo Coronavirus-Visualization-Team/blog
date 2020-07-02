@@ -20,7 +20,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <article
           style={{
             width: `100%`,
-            backgroundColor: `white`
+            backgroundColor: `white`,
+            border: `2px solid`
           }}
       >
         <header>

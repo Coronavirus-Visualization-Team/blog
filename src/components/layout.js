@@ -55,7 +55,7 @@ const Layout = ({ location, title, children }) => {
     <div
       style={{
         margin: `0`,
-        height: `100vh`,
+        height: `48vh`,
         width: `100%`,
         backgroundColor: `#1affc6`,
         color: `#5A5A5A`
@@ -73,7 +73,10 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer
           style={{
-            marginTop: `2vh`
+            marginTop: `2vh`,
+            position: `absolute`,
+            bottom: `0`,
+            marginBottom: `3vh`
           }}
       >
         © {new Date().getFullYear()}, Built with
