@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header>
           <h1
             style={{
-              fontFamily:"'Chivo', sans-serif",
+              fontFamily:"'Noto Serif JP', sans-serif",
               fontWeight: "bold",
               marginTop: rhythm(1),
               paddingTop: `2vh`,
@@ -41,8 +41,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p
             style={{
               ...scale(-1 / 5),
-              fontFamily:"'Chivo', sans-serif",
-              fontWeight: "bold",
+              fontFamily:"'Noto Serif JP', sans-serif",
+              fontWeight: "normal",
               display: `block`,
               marginBottom: rhythm(1),
               paddingLeft: `2.5vw`,
@@ -55,7 +55,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }}             
           style={{
               paddingLeft: `2.5vw`,
-              paddingRight: `2.5vw`
+              paddingRight: `2.5vw`,
+              fontFamily:"'Noto Serif JP', sans-serif",
+              fontWeight: "normal",
+              fontSize: "18px"
             }} 
         />
         <hr

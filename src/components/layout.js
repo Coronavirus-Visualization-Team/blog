@@ -11,7 +11,7 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          fontFamily:"'Chivo', sans-serif",
+          fontFamily:"'Noto Serif JP', sans-serif",
           fontWeight: "bold",
           ...scale(1.5),
           marginBottom: rhythm(1.5),
@@ -33,8 +33,7 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          //fontFamily: `Montserrat, sans-serif`,
-          fontFamily: "'Chivo', sans-serif",
+          fontFamily: "'Noto Serif JP', sans-serif",
           fontWeight: "bold",
           marginTop: 0,
         }}
@@ -76,7 +75,9 @@ const Layout = ({ location, title, children }) => {
             marginTop: `2vh`,
             position: `absolute`,
             bottom: `0`,
-            marginBottom: `3vh`
+            marginBottom: `3vh`,
+            fontFamily: "'Noto Serif JP', sans-serif",
+            fontWeight: "normal",
           }}
       >
         © {new Date().getFullYear()}, Built with

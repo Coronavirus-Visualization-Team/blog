@@ -41,6 +41,9 @@ const Bio = () => {
       style={{
         display: `flex`,
         marginBottom: rhythm(2.5),
+        fontFamily: "'Noto Serif JP', sans-serif",
+        fontWeight: "normal",
+        fontSize: "18px"
       }}
     >
       <p>

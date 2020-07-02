@@ -30,8 +30,9 @@ const BlogIndex = ({ data, location }) => {
             <header>
               <h3
                 style={{
-                  fontFamily: "'Chivo', sans-serif",
+                  fontFamily: "'Noto Serif JP', sans-serif",
                   fontWeight: "bold",
+                  fontSize: "24px",
                   marginBottom: rhythm(1 / 4),
                 }}
               >
@@ -39,11 +40,21 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small
+                style={{
+                  fontFamily: "'Noto Serif JP', sans-serif",
+                  fontWeight: "normal",
+                  marginBottom: rhythm(1 / 4),
+                }}              
+              >{node.frontmatter.date}
+              </small>
             </header>
             <section
               style={{
-                paddingBottom: `0.5vh`
+                paddingBottom: `0.5vh`,
+                fontFamily: "'Noto Serif JP', sans-serif",
+                fontWeight: `normal`,
+                fontSize: "18px"
               }} >
               <p
                 dangerouslySetInnerHTML={{

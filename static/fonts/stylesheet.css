@@ -13,3 +13,35 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: local('Noto Serif JP Regular'), local('NotoSerifJP-Regular'),
+        url('NotoSerifJP-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: local('Noto Serif JP Bold'), local('NotoSerifJP-Bold'),
+        url('NotoSerifJP-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karma';
+    src: local('Karma Regular'), local('Karma-Regular'),
+        url('Karma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karma';
+    src: local('Karma Bold'), local('Karma-Bold'),
+        url('Karma-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
