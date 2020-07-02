@@ -80,9 +80,7 @@ const Layout = ({ location, title, children }) => {
             fontWeight: "normal",
           }}
       >
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org" style= {{color: `#5A5A5A` }}>Gatsby</a>
+        © 2020 <a href="https://www.understandcovid.org/" style= {{color: `#5A5A5A` }}>Coronavirus Visualization Team</a>
       </footer>
     </div>
     </div>
