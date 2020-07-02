@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Chivo';
+    src: local('Chivo Bold'), local('Chivo-Bold'),
+        url('Chivo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: local('Chivo Regular'), local('Chivo-Regular'),
+        url('Chivo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

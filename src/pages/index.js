@@ -31,6 +31,8 @@ const BlogIndex = ({ data, location }) => {
             <header>
               <h3
                 style={{
+                  fontFamily: "'Chivo', sans-serif",
+                  fontWeight: "bold",
                   marginBottom: rhythm(1 / 4),
                   paddingTop: `4vh`
                 }}

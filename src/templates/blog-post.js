@@ -26,6 +26,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <header>
           <h1
             style={{
+              fontFamily:"'Chivo', sans-serif",
+              fontWeight: "bold",
               marginTop: rhythm(1),
               paddingTop: `2vh`,
               marginBottom: 0,
@@ -38,6 +40,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p
             style={{
               ...scale(-1 / 5),
+              fontFamily:"'Chivo', sans-serif",
+              fontWeight: "bold",
               display: `block`,
               marginBottom: rhythm(1),
               paddingLeft: `2.5vw`,

@@ -11,6 +11,8 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
+          fontFamily:"'Chivo', sans-serif",
+          fontWeight: "bold",
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
@@ -31,7 +33,9 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          fontFamily: `Montserrat, sans-serif`,
+          //fontFamily: `Montserrat, sans-serif`,
+          fontFamily: "'Chivo', sans-serif",
+          fontWeight: "bold",
           marginTop: 0,
         }}
       >
