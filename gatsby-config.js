@@ -2,13 +2,13 @@ module.exports = {
   siteMetadata: {
     title: `CVT Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Coronavirus Visualization Team`,
+      summary: `A crowdsourced student network of data scientists and developers.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Let's visualize the impact of COVID-19!`,
+    siteUrl: `https://blog.understandcovid.org/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `joincvt`,
     },
   },
   plugins: [
