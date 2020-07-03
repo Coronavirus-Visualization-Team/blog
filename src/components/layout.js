@@ -57,7 +57,7 @@ const Layout = ({ location, title, children }) => {
         height: `48vh`,
         width: `100%`,
         backgroundColor: `#1affc6`,
-        color: `#5A5A5A`
+        color: `#272727`
       }}
     >
     <div
@@ -80,7 +80,7 @@ const Layout = ({ location, title, children }) => {
             fontWeight: "normal",
           }}
       >
-        © 2020 <a href="https://www.understandcovid.org/" style= {{color: `#5A5A5A` }}>Coronavirus Visualization Team</a>
+        © 2020 <a href="https://www.understandcovid.org/" style= {{color: `#272727` }}>Coronavirus Visualization Team</a>
       </footer>
     </div>
     </div>

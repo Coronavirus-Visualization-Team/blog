@@ -24,8 +24,8 @@ const BlogIndex = ({ data, location }) => {
                 position: `absolute`,
                 left: `50`,
                 top: `50vh`,
-                backgroundColor: `white`,                
-              }} 
+                backgroundColor: `white`,
+              }}
             >
             <header>
               <h3
@@ -36,7 +36,7 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none`, color: `#5A5A5A` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none`, color: `#272727` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
@@ -45,7 +45,7 @@ const BlogIndex = ({ data, location }) => {
                   fontFamily: "'Noto Serif JP', sans-serif",
                   fontWeight: "normal",
                   marginBottom: rhythm(1 / 4),
-                }}              
+                }}
               >{node.frontmatter.date}
               </small>
             </header>
@@ -62,7 +62,7 @@ const BlogIndex = ({ data, location }) => {
                 }}
               />
             </section>
-         </div> 
+         </div>
       </article>
         )
       })}
