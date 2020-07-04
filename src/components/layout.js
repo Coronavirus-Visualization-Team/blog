@@ -54,7 +54,7 @@ const Layout = ({ location, title, children }) => {
     <div
       style={{
         margin: `0`,
-        height: `48vh`,
+        height: rhythm(12),
         width: `100%`,
         backgroundColor: `#1affc6`,
         color: `#272727`
