@@ -73,9 +73,8 @@ const Layout = ({ location, title, children }) => {
       <footer
           style={{
             marginTop: `2vh`,
-            position: `absolute`,
+            position: `relative`,
             bottom: `0`,
-            marginBottom: `3vh`,
             fontFamily: "'Noto Serif JP', sans-serif",
             fontWeight: "normal",
           }}

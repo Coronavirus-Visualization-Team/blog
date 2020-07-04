@@ -21,9 +21,7 @@ const BlogIndex = ({ data, location }) => {
             <div
               style={{
                 margin: `auto`,
-                position: `absolute`,
-                left: `50`,
-                top: `50vh`,
+                position: `relative`,
                 backgroundColor: `white`,
               }}
             >
@@ -34,6 +32,8 @@ const BlogIndex = ({ data, location }) => {
                   fontWeight: "bold",
                   fontSize: "24px",
                   marginBottom: rhythm(1 / 4),
+                  marginRight: rhythm(1 / 4),
+                  marginTop: rhythm(3 / 8)
                 }}
               >
                 <Link style={{ boxShadow: `none`, color: `#272727` }} to={node.fields.slug}>
@@ -90,6 +90,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author
           }
         }
       }
