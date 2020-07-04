@@ -33,7 +33,8 @@ const BlogIndex = ({ data, location }) => {
                   fontSize: "24px",
                   marginBottom: rhythm(1 / 4),
                   marginRight: rhythm(1 / 4),
-                  marginTop: rhythm(3 / 8)
+                  marginTop: rhythm(3 / 8),
+                  // paddingTop: rhythm(1 / 8)
                 }}
               >
                 <Link style={{ boxShadow: `none`, color: `#272727` }} to={node.fields.slug}>

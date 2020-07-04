@@ -54,7 +54,7 @@ const Layout = ({ location, title, children }) => {
     <div
       style={{
         margin: `0`,
-        height: rhythm(12),
+        height: rhythm(11.8),
         width: `100%`,
         backgroundColor: `#1affc6`,
         color: `#272727`
@@ -65,14 +65,14 @@ const Layout = ({ location, title, children }) => {
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
       }}
     >
       <header>{header}</header>
       <main>{children}</main>
       <footer
           style={{
-            marginTop: `2vh`,
+            marginTop: rhythm(1 / 2),
             position: `relative`,
             bottom: `0`,
             fontFamily: "'Noto Serif JP', sans-serif",
