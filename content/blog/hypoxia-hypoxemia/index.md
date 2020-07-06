@@ -38,7 +38,7 @@ Before diving into better understanding this phenomenon, it would be worthwhile 
 
 ![Oxygen-Hemoglobin Dissociation Curve](/oxygen-hemoglobin.png)
 
-The oxyhemoglobin dissociation curve illustrates the relationship between oxygen saturation and the partial pressure of oxygen. The sigmoidal shape of the curve essentially demonstrates the underpinnings of the interactions between the hemoglobin and oxygen. Hemoglobin has four binding sites and its affinity to oxygen increases as more oxygen is bound. Thus, the oxygen saturation percentage tends to rapidly increase before reaching a plateau, which denotes saturation. Likewise, as the partial pressure of oxygen falls, after a certain threshold, there will be a rapid release of oxygen for tissue uptake.
+The **oxyhemoglobin dissociation curve** illustrates the relationship between oxygen saturation and the partial pressure of oxygen. The sigmoidal shape of the curve essentially demonstrates the underpinnings of the interactions between the hemoglobin and oxygen. Hemoglobin has four binding sites and its affinity to oxygen increases as more oxygen is bound. Thus, the oxygen saturation percentage tends to rapidly increase before reaching a plateau, which denotes saturation. Likewise, as the partial pressure of oxygen falls, after a certain threshold, there will be a rapid release of oxygen for tissue uptake.
 
 There are a few reasons people with PaO2 below 60mmHG, or oxygen saturations below 90% may not display dyspnea:
 
