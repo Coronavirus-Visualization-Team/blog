@@ -45,11 +45,24 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               fontWeight: "normal",
               display: `block`,
               marginBottom: rhythm(1),
+              marginTop: rhythm(1),
               paddingLeft: `2.5vw`,
               paddingRight: `2.5vw`
             }}
           >
             {post.frontmatter.date}
+          </p>
+          <p
+            style={{
+              fontFamily:"'Noto Serif JP', sans-serif",
+              fontWeight: "normal",
+              display: `block`,
+              marginBottom: rhythm(1),
+              paddingLeft: `2.5vw`,
+              paddingRight: `2.5vw`
+            }}
+          >
+            By {post.frontmatter.author}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }}             
@@ -87,7 +100,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
-            marginTop: rhythm(1)
+            marginTop: rhythm(1),
+            fontFamily:"'Noto Serif JP', sans-serif",
+            fontWeight: "normal",
           }}
         >
           <li>
