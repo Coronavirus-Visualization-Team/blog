@@ -3,8 +3,8 @@ title: Unraveling the Clinical Conundrum of “Happy Hypoxia’, or “Silent Hy
 author: Kripa Krishnan
 date: "2020-07-02T22:12:03.284Z"
 description: "By Kripa Krishnan"
+image: "../img/oxygen-hemoglobin.png"
 ---
-*By Kripa Krishnan*
 
 Labored breathing, otherwise known as dyspnea, is what usually prompts one to call an ambulance, go to the ER, or in some cases merely report suffering/illness to a medical practitioner and if this happens to be a manifestation of Covid-19, it is most likely to have serious implications.
 

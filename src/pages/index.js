@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Tile from "../components/Tile"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -12,10 +13,12 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Home" />
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+        const image = node.frontmatter.image
+        const author = node.frontmatter.author
         return (
           <article key={node.fields.slug}>
             <div
@@ -25,44 +28,7 @@ const BlogIndex = ({ data, location }) => {
                 backgroundColor: `white`,
               }}
             >
-            <header>
-              <h3
-                style={{
-                  fontFamily: "'Noto Serif JP', sans-serif",
-                  fontWeight: "bold",
-                  fontSize: "24px",
-                  marginBottom: rhythm(1 / 4),
-                  marginRight: rhythm(1 / 4),
-                  marginTop: rhythm(3 / 8),
-                  // paddingTop: rhythm(1 / 8)
-                }}
-              >
-                <Link style={{ boxShadow: `none`, color: `#272727` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small
-                style={{
-                  fontFamily: "'Noto Serif JP', sans-serif",
-                  fontWeight: "normal",
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >{node.frontmatter.date}
-              </small>
-            </header>
-            <section
-              style={{
-                paddingBottom: `0.5vh`,
-                fontFamily: "'Noto Serif JP', sans-serif",
-                fontWeight: `normal`,
-                fontSize: "18px"
-              }} >
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
+            <Tile title={title} img={image} author={author}slug={node.fields.slug}/>
          </div>
       </article>
         )
@@ -92,6 +58,7 @@ export const pageQuery = graphql`
             title
             description
             author
+            image
           }
         }
       }
