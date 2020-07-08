@@ -13,7 +13,7 @@ const Tile = ({ title, img, author, slug }) => {
             boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
             bg: 'white',
             p: [3,4],
-            borderRadius: '6',
+            borderRadius: '20px',
             color: 'black',
             mb: [20, 140],
             backgroundColor: "white",
@@ -41,10 +41,10 @@ const Tile = ({ title, img, author, slug }) => {
                     sx = {{
                         width: ['350px', '100%'],
                         height: ['210px', '250px'],
-                        borderRadius: '20',
+                        borderRadius: '20px',
                         ml: [0, '10px'],
-                        transition: '0.2s',
-                        cursor: 'pointer',
+                        transition: '0.2s', 
+                        '&:hover': {boxShadow: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)", cursor: 'pointer'}
                     }}
                     />
         </Box>
