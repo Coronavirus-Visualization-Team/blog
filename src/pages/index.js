@@ -1,11 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import Tile from "../components/Tile"
+import { Grid } from "theme-ui"
+
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -28,7 +29,9 @@ const BlogIndex = ({ data, location }) => {
                 backgroundColor: `white`,
               }}
             >
-            <Tile title={title} img={image} author={author}slug={node.fields.slug}/>
+              <Grid width={["100%", "45%"]} marginRight="4vw" marginLeft="2.5vw">
+                <Tile title={title} img={image} author={author}slug={node.fields.slug}/>
+              </Grid>
          </div>
       </article>
         )

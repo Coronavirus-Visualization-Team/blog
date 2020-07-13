@@ -21,7 +21,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           style={{
             width: `100%`,
             backgroundColor: `white`,
-            border: `2px solid`
+            border: `2px solid`,
+            color: `#272727`
           }}
       >
         <header>
@@ -33,7 +34,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               paddingTop: `2vh`,
               marginBottom: 0,
               paddingLeft: `2.3vw`,
-              paddingRight: `2.5vw`
+              paddingRight: `2.5vw`, 
+              color: `#272727`
             }}
           >
             {post.frontmatter.title}
@@ -47,7 +49,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
               marginTop: rhythm(1),
               paddingLeft: `2.5vw`,
-              paddingRight: `2.5vw`
+              paddingRight: `2.5vw`,
+              color: `#272727`
             }}
           >
             {post.frontmatter.date}
@@ -59,7 +62,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               display: `block`,
               marginBottom: rhythm(1),
               paddingLeft: `2.5vw`,
-              paddingRight: `2.5vw`
+              paddingRight: `2.5vw`,
+              color: `#272727`
             }}
           >
             By {post.frontmatter.author}
@@ -71,7 +75,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               paddingRight: `2.5vw`,
               fontFamily:"'Noto Serif JP', sans-serif",
               fontWeight: "normal",
-              fontSize: "18px"
+              fontSize: "18px",
+              color: `#272727`
             }} 
         />
         <hr
@@ -85,7 +90,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             display: `block`,
             marginBottom: rhythm(1),
             paddingLeft: `2.5vw`,
-            paddingRight: `2.5vw`
+            paddingRight: `2.5vw`,
+            color: `#272727`
           }}
         >
           <Bio />
@@ -103,6 +109,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginTop: rhythm(1),
             fontFamily:"'Noto Serif JP', sans-serif",
             fontWeight: "normal",
+            color: `#272727`
           }}
         >
           <li>

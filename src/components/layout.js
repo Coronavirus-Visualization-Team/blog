@@ -16,6 +16,7 @@ const Layout = ({ location, title, children }) => {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          color: `white`
         }}
       >
         <Link
@@ -36,6 +37,7 @@ const Layout = ({ location, title, children }) => {
           fontFamily: "'Noto Serif JP', sans-serif",
           fontWeight: "bold",
           marginTop: 0,
+          color: `white`
         }}
       >
         <Link
@@ -56,15 +58,15 @@ const Layout = ({ location, title, children }) => {
         margin: `0`,
         height: rhythm(11.8),
         width: `100%`,
-        backgroundColor: `#1affc6`,
-        color: `#272727`
+        background: "linear-gradient(147.71deg, #168CA6 17.12%, #20E8C4 90.62%)",
+        color: `white`
       }}
     >
     <div
       style={{
         marginLeft: `auto`,
         marginRight: `auto`,
-        maxWidth: rhythm(24),
+        maxWidth: rhythm(26),
         padding: `${rhythm(1)} ${rhythm(3 / 4)}`,
       }}
     >
@@ -77,6 +79,7 @@ const Layout = ({ location, title, children }) => {
             bottom: `0`,
             fontFamily: "'Noto Serif JP', sans-serif",
             fontWeight: "normal",
+            color: `#272727`
           }}
       >
         © 2020 <a href="https://www.understandcovid.org/" style= {{color: `#272727` }}>Coronavirus Visualization Team</a>
