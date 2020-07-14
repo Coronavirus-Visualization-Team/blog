@@ -16,26 +16,28 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" />
       <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        const image = node.frontmatter.image
-        const author = node.frontmatter.author
-        return (
-          <article key={node.fields.slug}>
-            <div
-              style={{
-                margin: `auto`,
-                position: `relative`,
-                backgroundColor: `white`,
-              }}
-            >
-              <Grid width={["100%", "45%"]} marginRight="4vw" marginLeft="2.5vw">
-                <Tile title={title} img={image} author={author}slug={node.fields.slug}/>
-              </Grid>
-         </div>
-      </article>
-        )
-      })}
+      <div
+         style={{
+          margin: `auto`,
+          position: `relative`,
+          backgroundColor: `white`,
+          width: `100%`,
+          maxWidth: `1024`
+        }}
+      >
+        <Grid columns={[1, 2]} width={["100%", "45%"]}>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          const image = node.frontmatter.image
+          const author = node.frontmatter.author
+          return (
+            <article key={node.fields.slug}>
+              <Tile title={title} img={image} author={author}slug={node.fields.slug}/>
+            </article>
+          )
+        })}         
+        </Grid>
+      </div>
     </Layout>
   )
 }
