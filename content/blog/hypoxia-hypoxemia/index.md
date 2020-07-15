@@ -2,7 +2,6 @@
 title: Unraveling the Clinical Conundrum of “Happy Hypoxia’, or “Silent Hypoxemia”
 author: Kripa Krishnan
 date: "2020-07-02T22:12:03.284Z"
-description: "By Kripa Krishnan"
 image: "../img/oxygen-hemoglobin.png"
 ---
 
