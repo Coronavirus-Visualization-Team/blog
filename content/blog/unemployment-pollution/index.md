@@ -1,6 +1,6 @@
 ---
 title: Fact-Checking the EPA- Unemployment v. Pollution
-author: Ellie Klibaner-Schiff, Catherine McCarthy, Sara Kohler
+author: Ellie Klibaner-Schiff, Catherine McCarthy, and Sara Kohler
 date: "2020-06-29T22:12:03.284Z"
 image: "../img/unemployment-pollution.png"
 ---
